@@ -1,4 +1,4 @@
-import wallet from "../wba-wallet.json"
+import wallet from "../wba-dev-wallet.json"
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults"
 import { 
     createMetadataAccountV3, 
@@ -7,7 +7,7 @@ import {
     DataV2Args
 } from "@metaplex-foundation/mpl-token-metadata";
 import { createSignerFromKeypair, signerIdentity, publicKey } from "@metaplex-foundation/umi";
-
+// TODO
 // Define our Mint address
 const mint = publicKey("<mint address>")
 

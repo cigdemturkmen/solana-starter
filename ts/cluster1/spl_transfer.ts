@@ -1,7 +1,7 @@
 import { Commitment, Connection, Keypair, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js"
-import wallet from "../wba-wallet.json"
+import wallet from "../wba-dev-wallet.json"
 import { getOrCreateAssociatedTokenAccount, transfer } from "@solana/spl-token";
-
+// TODO
 // We're going to import our keypair from the wallet file
 const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
 
