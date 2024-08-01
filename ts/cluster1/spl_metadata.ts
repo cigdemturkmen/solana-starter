@@ -22,7 +22,7 @@ umi.use(signerIdentity(createSignerFromKeypair(umi, keypair)));
         // Start here
         // let accounts: CreateMetadataAccountV3InstructionAccounts = {
         //     ???
-        // }
+        //}
 
         // let data: DataV2Args = {
         //     ???
@@ -46,3 +46,43 @@ umi.use(signerIdentity(createSignerFromKeypair(umi, keypair)));
         console.error(`Oops, something went wrong: ${e}`)
     }
 })();
+
+
+
+// region: Note to Self
+/*
+       let metadata: DataV2Args = {
+            name: "Your Token Name",
+            symbol: "SYM",
+            uri: "https://your-token-uri.com",
+            sellerFeeBasisPoints: 500,
+            creators: [
+                {
+                    address: signer.publicKey,
+                    verified: true,
+                    share: 100
+                }
+            ], // (optional)
+            collection: null, // which collection this token will be belong to(used for NFTs). (optional) 
+            uses: null // how many times the token can be used. for assets with limited use
+        };
+
+
+    // collection object looks like:
+    collection: {
+        key: publicKey("<collection public key>"), // Replace with your collection public key
+        verified: false // Set to true if the collection is verified
+    }
+
+    // uses object looks like:
+      uses: {
+        useMethod: "Single", // Method of use
+        remaining: 10, // Remaining uses
+        total: 10 // Total uses
+    }
+
+    // uri in metadata is for additional metadata. It points to the json file allows you to store extensive metadata about the token in a centralized location(a server, IPFS, or Arweave). 
+    This way, you are not limited by the on-chain storage limitations and costs.
+    
+*/
+// endregion Note to Self
