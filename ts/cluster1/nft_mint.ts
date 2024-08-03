@@ -16,7 +16,7 @@ umi.use(mplTokenMetadata())
 const mint = generateSigner(umi);
 
 (async () => {
-    // let tx = ???
+    // let tx = createNft()
     // let result = await tx.sendAndConfirm(umi);
     // const signature = base58.encode(result.signature);
     
@@ -24,3 +24,16 @@ const mint = generateSigner(umi);
 
     console.log("Mint Address: ", mint.publicKey);
 })();
+
+
+//  const tx = await createNft(umi, {
+//   mint: nftSigner,
+//   sellerFeeBasisPoints: percentAmount(5.5),
+//   name: 'My NFT',
+//   uri: metadataUri,
+// }).sendAndConfirm(umi)
+
+// region: Note to Self
+/*
+*/
+// endregion: Note to Self

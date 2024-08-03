@@ -26,3 +26,9 @@ const to = new PublicKey("<receiver address>");
         console.error(`Oops, something went wrong: ${e}`)
     }
 })();
+
+
+// region: Note to Self
+/*
+*/
+// endregion: Note to Self
